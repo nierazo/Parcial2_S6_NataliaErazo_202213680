@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-aerolinea',
-  standalone: false,
+  standalone: true,
   templateUrl: './aerolinea.component.html',
   styleUrls: ['./aerolinea.component.css']
 })
