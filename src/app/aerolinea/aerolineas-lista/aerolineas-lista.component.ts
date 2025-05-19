@@ -24,10 +24,6 @@ export class AerolineasListaComponent implements OnInit {
     this.aerolineaService.getAerolineas().subscribe({next: apiData => this.aerolineas = apiData });
   }
 
-  getAerolinea(id: string): void {
-    this.aerolineaService.getAerolinea(id).subscribe({next: apiData => this.aerolineas = apiData });
-  }
-
   onSelected(aerolinea: Aerolinea): void {
     this.selected = true;
     this.selectedAerolinea = aerolinea;

@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="grid">
-  <div class="card bg-{{aerolinea.identityColor}}" style="grid-template-columns: repeat(3, 1fr);" *ngFor = "let aerolinea of aerolineas" (click)="getAerolinea(aerolinea)">
+  <div class="card bg-{{aerolinea.identityColor}}" style="grid-template-columns: repeat(3, 1fr);" *ngFor = "let aerolinea of aerolineas" (click)="onSelected(aerolinea)">
     <h3>{{aerolinea.airlineName}}</h3>
   </div>
 </div>
